@@ -1,0 +1,95 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo .text {
+    color: whitesmoke;
+    font-size: 80px;
+    position: fixed;
+    top:50px;
+    left: 480px;
+
+}
+
+.container{
+    position: fixed;
+    width: 100%;
+    margin-top: 430px;
+    margin-left: 670px;
+
+  }
+  .wrapper{
+    position: absolute;
+    top: -35px;
+    transform: scale(1.5);
+  }
+  .loader{
+    height: 42px;
+   width: 1px;
+   position: absolute;
+   animation: rotate 3.5s linear infinite;
+  }
+  .loader .dot{
+    top: 30px;
+   height: 3px;
+   width: 3px;
+   background: #fff;
+   border-radius: 50%;
+   position: relative;
+  }
+  .text{
+    position: absolute;
+    bottom: -85px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Poppins',sans-serif;
+    color: #fff;
+  }
+  .logo img {
+      position: fixed;
+      height: 105px;
+      width: 115px;
+      top: 110px;
+      left: 625px;
+      display: none;
+  }
+  @keyframes rotate {
+    30%{
+      transform: rotate(220deg);
+    }
+    40%{
+    transform: rotate(450deg);
+      opacity: 1;
+   }
+   75%{
+    transform: rotate(720deg);
+    opacity: 1;
+   }
+   76%{
+    opacity: 0;
+   }
+   100%{
+    opacity: 0;
+    transform: rotate(0deg);
+   }
+  }
+  .loader:nth-child(1){
+    animation-delay: 0.15s;
+  }
+  .loader:nth-child(2){
+    animation-delay: 0.3s;
+  }
+  .loader:nth-child(3){
+    animation-delay: 0.45s;
+  }
+  .loader:nth-child(4){
+    animation-delay: 0.6s;
+  }
+  .loader:nth-child(5){
+    animation-delay: 0.75s;
+  }
+  .loader:nth-child(6){
+    animation-delay: 0.9s;
+  }

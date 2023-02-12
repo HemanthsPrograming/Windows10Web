@@ -1,0 +1,27 @@
+  .apps .camera {
+    height: 40px;
+    width: 86%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(224, 224, 224);
+  }
+
+  .apps .camera img {
+    height: 20px;
+    position: relative;
+    left: 8px;
+  }
+
+  .apps .camera p {
+    cursor: alias;
+    position: relative;
+    left: 17px;
+  }
+
+  .apps .camera:hover {
+    background-color: #7c7c7c79;
+  }

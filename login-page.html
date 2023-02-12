@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="login-style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="windows-10-icon-9.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="login-script.js"></script>
+    <title>Windows 10 Login Page</title>
+</head>
+    <body onload="writeDate()">
+      <div class="time" id="time">
+        <p class="currentTime" id="currentTime"></p>
+        <p class="currentDate" id="currentDate"></p>
+        <div class="side_log">
+          <i class="fa fa-wifi" id="wifi_icon"></i>
+          <i class="fa fa-battery-three-quarters"></i>
+        </div>
+      </div>
+      <div class="clickReturn" onclick="clickRedirect()">
+      </div>
+      <div class="loginPromt" id="loginPromt">
+        <div class="profile_promt">
+          <div id="profile_promt_id">
+            <h4><center>Enter Password</center></h4>
+            <input type="password" id="password_check" placeholder="Password">
+            <button onclick="checkPassword()"><i class="fa fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="login2ndstage">
+
+        </div>
+        <div class="profile"></div>
+      </div>
+      <script>
+        const d = new Date();
+        let timeHours = d.getHours();
+        let timeMin = d.getMinutes();
+        let date = d.getDate();
+        let dayNames = [ "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        let monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+        let year = d.getFullYear();
+        console.log(
+          "Current TimeLog =" +
+          timeHours + " : " +
+          timeMin + " " +
+          date + " " +
+          dayNames[d.getDay()] + " " +
+          monthNames[d.getMonth()] + " " +
+          year
+        )
+
+        function writeDate() {
+          document.getElementById('currentTime').innerHTML = timeHours + ":" + timeMin;
+          if(timeMin < 9) {
+            timeMin = '0' + timeMin
+          };
+          document.getElementById('currentDate').innerHTML = dayNames[d.getDay()] + ", " + date + " " + monthNames[d.getMonth()] + ", " + year;
+        };
+      </script>
+    </body>
+</html>

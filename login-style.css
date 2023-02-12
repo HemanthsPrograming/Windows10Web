@@ -1,0 +1,138 @@
+body {
+    background-image: url("loginpage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+
+.time {
+    position: absolute;
+    bottom: 60px;
+}
+
+@keyframes fade-in-out {
+    0% {
+        bottom: 0%;
+    }
+    25% {
+        bottom: 25%;
+        color: rgba(255, 255, 255, 0.671);
+    }
+    50% {
+        bottom: 50%;
+        color: rgba(255, 255, 255, 0.521);
+    }
+    75% {
+        bottom: 75%;
+        color: rgba(255, 255, 255, 0.308);
+    }
+    100% {
+        bottom: 100%;
+        color: rgba(255, 255, 255, 0.116);
+        display: none;
+    }
+}
+.time .currentTime {
+    font-size: 100px;
+    position: absolute;
+    left: 30px;
+    top: -230px;
+}
+
+.time .currentDate {
+    font-size: 28px;
+    position: relative;
+    left: 40px;
+}
+
+.clickReturn {
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0 ;
+}
+
+.loginPromt {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.089);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: none;
+}
+@keyframes fades {
+    0% {
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+    }
+    100% {
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+}
+
+.side_log {
+    font-size: 20px;
+    position: absolute;
+    right: -950px;
+    top: 75px;
+    word-spacing: 15px;
+    color: rgba(255, 255, 255, 0.849);
+}
+
+.profile_promt {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+#profile_promt_id h4{
+    font-size: 22px;
+    align-items: center;
+    color: #fff;
+}
+
+#profile_promt_id input {
+    height: 28px;
+    width: 170px;
+    border: 0.0000000001px solid grey;
+    border-radius: 5px 0px 0px 5px;
+    cursor: text;
+}
+#profile_promt_id button {
+    height: 30px;
+    width: 28px;
+    font-size: auto;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    background-color: rgb(192, 192, 192);
+    position: relative;
+    left: -4px;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+#profile_promt_id button:hover {
+    background-color: grey;
+}
+
+
+#profile_promt_id input::placeholder {
+    font-size: 11px;
+    position: relative;
+    left: 7px;
+}

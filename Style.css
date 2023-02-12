@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.but .poweron{
+    background-color: black;
+    height: 40px;
+    width: 160px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgb(39, 39, 185);
+    transition: all 0.5s ease;
+    cursor: pointer;
+    margin-top: 280px;
+}
+.but .poweron:hover {
+    background-color: rgb(39, 39, 185);
+}
